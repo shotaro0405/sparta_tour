@@ -1,6 +1,7 @@
 <%= form_for(@course) do |f| %>
   <% if @course.errors.any? %>
     <div id="error_explanation">
+    <!--エラーの数をカウント-->
       <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
 
       <ul>

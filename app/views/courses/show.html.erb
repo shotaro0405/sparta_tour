@@ -31,7 +31,7 @@
 </p>
 
 <%= render partial: 'participants_list', locals: {
-  participants: Participant.where(course_id: @course.id)
+  participants: Participant.where(course_id: @course.participants)
   } %>
 
 <%= render partial: 'new_participant', locals: {participant: Participant.new(course_id: @course.id)} %>
